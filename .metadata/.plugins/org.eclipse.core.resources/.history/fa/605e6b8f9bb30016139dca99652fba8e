@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="53.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="617.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="53.0" layoutY="547.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="617.0" />
+      <Text layoutX="242.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="您好，XXX">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Button layoutX="531.0" layoutY="560.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="66.0" text="退出" />
+      <TextField layoutY="53.0" prefHeight="28.0" prefWidth="553.0" text="名称搜索" />
+      <Button layoutX="552.0" layoutY="53.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="66.0" text="搜索" />
+      <Text layoutX="43.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="地址">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField layoutX="99.0" layoutY="104.0" prefHeight="23.0" prefWidth="161.0" />
+      <Text layoutX="340.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="商圈">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField layoutX="403.0" layoutY="104.0" prefHeight="23.0" prefWidth="161.0" />
+      <Text layoutX="340.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="星级">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox layoutX="404.0" layoutY="149.0" prefHeight="23.0" prefWidth="106.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ChoiceBox>
+      <Text layoutX="43.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="评分区间">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox layoutX="135.0" layoutY="148.0" prefHeight="23.0" prefWidth="124.0" />
+      <Text layoutX="43.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="空房时段">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <DatePicker layoutX="140.0" layoutY="189.0" prefHeight="23.0" prefWidth="171.0" />
+      <Text layoutX="349.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="至">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <DatePicker layoutX="404.0" layoutY="189.0" prefHeight="23.0" prefWidth="171.0" />
+      <CheckBox layoutX="43.0" layoutY="234.0" mnemonicParsing="false" text="只搜索预订过的" />
+      <Button layoutX="537.0" layoutY="228.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="54.0" text="搜索" />
+      <Button layoutX="37.0" layoutY="275.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="141.0" text="我的订单">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="407.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="141.0" text="个人中心">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="342.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="141.0" text="我订过的酒店">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="475.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="141.0" text="申请会员">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#edf1f5" height="245.0" layoutX="226.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="349.0" />
+      <Text layoutX="386.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="广告区" />
+   </children>
+</Pane>
+

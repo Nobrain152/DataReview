@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.hotelEvaluate.hotelEvaluateViewController">
+   <children>
+      <Pane prefHeight="77.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="77.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Text layoutX="31.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="700.0" layoutY="24.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="61.0" text="首页" />
+         </children>
+      </Pane>
+      <Pane layoutY="529.0" prefHeight="71.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="71.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Button fx:id="btn_Cancel" layoutX="702.0" layoutY="20.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="61.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Pane layoutY="77.0" prefHeight="454.0" prefWidth="800.0">
+         <children>
+            <Line endX="200.0" layoutX="400.0" layoutY="93.0" startX="-200.0" strokeWidth="0.5" />
+            <Label layoutX="200.0" layoutY="45.0" text="酒店评论">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text layoutX="200.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="为酒店评分">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tf_score" layoutX="298.0" layoutY="122.0" promptText="输入0~10的数字" />
+            <TextArea fx:id="ta_comment" layoutX="200.0" layoutY="168.0" prefHeight="166.0" prefWidth="401.0" promptText="写下您对酒店的评价吧（至少输入8个字）" />
+            <Button fx:id="btn_Submit" layoutX="546.0" layoutY="362.0" mnemonicParsing="false" onAction="#btn_SubmitAction" prefHeight="29.0" prefWidth="54.0" text="提交" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

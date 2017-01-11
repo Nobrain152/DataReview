@@ -1,0 +1,17 @@
+package bl.hotelbl;
+
+import java.util.ArrayList;
+
+import vo.HotelInfoVO;
+
+public class HotelReservedCheck {
+	public ArrayList<HotelInfoVO> hotelList;
+	
+	public HotelReservedCheck() {
+		hotelList = new ArrayList<HotelInfoVO>();
+	}
+
+	public ArrayList<HotelInfoVO> checkReserved(HotelInfoVO reservedHotelListVO){
+    	return hotelList; 
+    }
+}

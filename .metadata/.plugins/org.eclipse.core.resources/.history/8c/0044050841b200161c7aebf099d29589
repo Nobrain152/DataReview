@@ -1,0 +1,31 @@
+package bl.hotelbl;
+
+import java.rmi.RemoteException;
+import java.util.ArrayList;
+
+import dataservice.hoteldataservice.HotelEvaluateDataService;
+import dataservice.hoteldataservice.HotelInfoDataService;
+import util.EvaluationMsg;
+import util.HotelMsg;
+import util.ResultMsg;
+import vo.HotelInfoVO;
+
+public class HotelSearch {
+	private HotelInfoDataService hotelData;
+	private HotelMsg evaluation;
+	
+	public HotelSearch(HotelInfoDataService hotelDataService){
+		this.hotelData=hotelDataService;
+	}
+
+	public HotelMsg selectCondition(HotelInfoVO hotelInfoVO) throws RemoteException{
+		return new HotelMsg(hotelInfoVO.getName(),hotelInfoVO.getAddress(),
+    			hotelInfoVO.getArea(),hotelInfoVO.getLevel(),hotelInfoVO.getIntroduction(),
+    			hotelInfoVO.getFacility(),hotelInfoVO.isReserved());
+	}
+	
+	
+    public ArrayList<HotelInfoVO> showList(HotelInfoVO hotelListInfoVO) throws RemoteException{
+    	return hotelList;
+    }
+}

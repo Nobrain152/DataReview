@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.roomAdd.roomModifyViewController">
+   <children>
+      <Pane prefHeight="73.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="73.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Text layoutX="40.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="527.0" prefHeight="73.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="73.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Button fx:id="btn_Cancel" layoutX="693.0" layoutY="30.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="61.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="73.0" prefHeight="455.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="95.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="客房修改">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Line endX="390.0" endY="40.0" layoutX="309.0" layoutY="73.0" startX="-210.0" startY="40.0" strokeWidth="0.5" />
+            <Text layoutX="131.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="房间号">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="cb_type" layoutX="202.0" layoutY="239.0" prefHeight="23.0" prefWidth="126.0" />
+            <ChoiceBox fx:id="cb_state" layoutX="543.0" layoutY="243.0" prefHeight="23.0" prefWidth="126.0" />
+            <Text layoutX="132.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="房间类型">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="479.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="房间状态">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="478.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="原始价格">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tf_price" layoutX="542.0" layoutY="163.0" prefHeight="23.0" prefWidth="126.0" />
+            <Button fx:id="btn_Save" layoutX="627.0" layoutY="332.0" mnemonicParsing="false" onAction="#btn_SaveAction" prefHeight="30.0" prefWidth="61.0" text="确认" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4dee8" height="30.0" layoutX="201.0" layoutY="157.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="126.0" />
+            <Label fx:id="lb_roomID" layoutX="209.0" layoutY="157.0" prefHeight="29.0" prefWidth="110.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</AnchorPane>

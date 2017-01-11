@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.promotionWeb.promotionWebVIPViewController">
+   <children>
+      <Pane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Text layoutX="70.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="530.0" prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Button fx:id="btn_Cancel" layoutX="700.0" layoutY="20.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="59.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Label layoutX="244.0" layoutY="169.0" text="会员等级优惠策略修改">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="245.0" text="会员等级">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe8f2" height="39.0" layoutX="359.0" layoutY="237.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="197.0" />
+      <Label layoutX="244.0" layoutY="315.0" text="相应折扣">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_discount" layoutX="359.0" layoutY="307.0" prefHeight="39.0" prefWidth="197.0" />
+      <Button fx:id="btn_Modify" layoutX="480.0" layoutY="390.0" mnemonicParsing="false" onAction="#btn_ModifyAction" prefHeight="39.0" prefWidth="76.0" text="确认修改">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lb_level" layoutX="368.0" layoutY="246.0" prefHeight="22.0" prefWidth="138.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

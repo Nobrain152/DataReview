@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.customerInfoManage.customerInfoByMViewController">
+   <children>
+      <Pane prefHeight="76.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="76.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Text layoutX="33.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="btn_home" layoutX="693.0" layoutY="22.0" mnemonicParsing="false" onAction="#btn_homeAction" prefHeight="29.0" prefWidth="61.0" text="首页" />
+         </children>
+      </Pane>
+      <Pane layoutY="524.0" prefHeight="76.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="76.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Button fx:id="btn_Cancel" layoutX="688.0" layoutY="24.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="61.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="76.0" prefHeight="448.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="259.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="姓名">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="253.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账户ID">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="247.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="联系方式">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="253.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="信用值">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Button fx:id="btn_Modify" layoutX="366.0" layoutY="319.0" mnemonicParsing="false" onAction="#btn_ModifyAction" prefHeight="30.0" prefWidth="108.0" text="修改用户信息" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3dde8" height="30.0" layoutX="346.0" layoutY="99.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="208.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3dde8" height="30.0" layoutX="346.0" layoutY="148.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="208.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3dde8" height="30.0" layoutX="346.0" layoutY="199.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="208.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3dde8" height="30.0" layoutX="346.0" layoutY="255.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="208.0" />
+            <Label fx:id="lb_ID" layoutX="359.0" layoutY="102.0" prefHeight="24.0" prefWidth="144.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_name" layoutX="359.0" layoutY="151.0" prefHeight="24.0" prefWidth="174.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_contact" layoutX="359.0" layoutY="202.0" prefHeight="24.0" prefWidth="174.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_credit" layoutX="359.0" layoutY="258.0" prefHeight="24.0" prefWidth="61.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

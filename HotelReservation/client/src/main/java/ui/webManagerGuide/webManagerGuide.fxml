@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.webManagerGuide.webManagerGuideViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="74.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="61.0" layoutY="539.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+      <Text layoutX="46.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_Cancel" layoutX="702.0" layoutY="556.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="66.0" text="退出" />
+      <Button fx:id="btn_Customer" layoutX="201.0" layoutY="166.0" mnemonicParsing="false" onAction="#btn_CustomerAction" prefHeight="61.0" prefWidth="149.0" text="客户查询">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Hotel" layoutX="449.0" layoutY="166.0" mnemonicParsing="false" onAction="#btn_HotelAction" prefHeight="61.0" prefWidth="149.0" text="酒店添加">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_StuffInquire" layoutX="201.0" layoutY="274.0" mnemonicParsing="false" onAction="#btn_StuffInquireAction" prefHeight="61.0" prefWidth="149.0" text="酒店工作人员查询">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_SalesmanInquire" layoutX="201.0" layoutY="388.0" mnemonicParsing="false" onAction="#btn_SalesmanInquireAction" prefHeight="61.0" prefWidth="149.0" text="网站营销人员查询">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_StuffAdd" layoutX="449.0" layoutY="274.0" mnemonicParsing="false" onAction="#btn_StuffAddAction" prefHeight="61.0" prefWidth="149.0" text="酒店工作人员添加">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_SalesmanAdd" layoutX="449.0" layoutY="388.0" mnemonicParsing="false" onAction="#btn_SalesmanAddAction" prefHeight="61.0" prefWidth="149.0" text="网站营销人员添加">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

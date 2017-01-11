@@ -1,0 +1,29 @@
+package bl.hotelbl;
+
+import java.util.ArrayList;
+
+import dataservice.hoteldataservice.HotelInfoDataService;
+import util.HotelMsg;
+import vo.HotelInfoVO;
+
+public class HotelInfoCheckController {
+	public ArrayList<HotelInfoVO> hotelList;
+	private HotelInfoCheck hotelInfoCheck;
+	private HotelInfoDataService hotelInfoData;
+	
+	public HotelInfoCheckController() {
+		hotelList = new ArrayList<HotelInfoVO>();
+	}
+	
+	
+	/**
+	 * œ‘ ææ∆µÍ–≈œ¢
+	 * 
+	 */
+    public HotelMsg checkHotelInfo(HotelInfoVO hotelInfoVO){
+    	return new HotelMsg(hotelInfoVO.getName(),hotelInfoVO.getAddress(),
+    			hotelInfoVO.getArea(),hotelInfoVO.getLevel(),hotelInfoVO.getIntroduction(),
+    			hotelInfoVO.getFacility(),hotelInfoVO.isReserved());
+    }
+      
+}

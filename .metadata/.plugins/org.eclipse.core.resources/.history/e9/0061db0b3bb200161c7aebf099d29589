@@ -1,0 +1,22 @@
+package bl.hotelbl;
+
+import java.rmi.RemoteException;
+
+import util.HotelMsg;
+import util.ResultMsg;
+import vo.HotelInfoVO;
+
+public class HotelInfoMaintain {
+
+	
+	public HotelMsg inputHotelInfo(HotelInfoVO hotelInfoVO)  throws RemoteException{
+		return new HotelMsg(hotelInfoVO.getName(),hotelInfoVO.getAddress(),
+    			hotelInfoVO.getArea(),hotelInfoVO.getLevel(),hotelInfoVO.getIntroduction(),
+    			hotelInfoVO.getFacility(),hotelInfoVO.isReserved());
+	}
+	
+	
+    public ResultMsg submitInfo(HotelInfoVO hotelInfoVO)  throws RemoteException{
+    	return new ResultMsg(true,"Î¬»¤³É¹¦");
+    }
+}

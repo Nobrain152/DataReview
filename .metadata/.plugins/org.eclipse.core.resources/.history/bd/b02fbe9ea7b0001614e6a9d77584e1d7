@@ -1,0 +1,11 @@
+package bl.hotelbl;
+
+import dataservice.hoteldataservice.HotelEvaluateDataService;
+
+public class HotelEvaluate {
+	private HotelEvaluateDataService evaluateData;
+	
+	public HotelEvaluate(HotelEvaluateDataService evaluateDataService){
+		this.evaluateData=evaluateDataService;
+	}
+}

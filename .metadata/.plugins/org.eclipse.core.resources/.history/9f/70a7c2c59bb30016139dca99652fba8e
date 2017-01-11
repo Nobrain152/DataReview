@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="256.0" layoutY="319.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="89.0" text="登录" />
+      <Circle fill="WHITE" layoutX="300.0" layoutY="106.0" radius="70.0" stroke="#e4d6d6" strokeType="INSIDE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Circle>
+      <Text layoutX="250.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField layoutX="221.0" layoutY="214.0" text="账号" />
+      <TextField layoutX="220.0" layoutY="264.0" text="密码" />
+   </children>
+</Pane>

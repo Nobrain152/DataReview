@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.hotelReserve.hotelReserveViewController">
+   <children>
+      <Pane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Text layoutX="70.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="699.0" layoutY="26.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="59.0" text="首页">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="530.0" prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Button fx:id="btn_Cancel" layoutX="700.0" layoutY="20.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="59.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <ChoiceBox fx:id="cb_room" layoutX="177.0" layoutY="157.0" prefHeight="30.0" prefWidth="182.0" />
+      <TextField fx:id="tf_roomNumber" layoutX="177.0" layoutY="202.0" prefHeight="30.0" prefWidth="182.0" />
+      <TextField fx:id="tf_peopleNumber" layoutX="177.0" layoutY="245.0" prefHeight="30.0" prefWidth="182.0" />
+      <CheckBox fx:id="cb_children" layoutX="177.0" layoutY="384.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="126.0" text="是否携带儿童">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="94.0" layoutY="158.0" prefHeight="29.0" prefWidth="59.0" text="房间类型">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="206.0" prefHeight="23.0" prefWidth="59.0" text="房间数量">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="246.0" prefHeight="29.0" prefWidth="59.0" text="入住人数">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_Reserve" layoutX="303.0" layoutY="422.0" mnemonicParsing="false" onAction="#btn_ReserveAction" prefHeight="30.0" prefWidth="59.0" text="预定" />
+      <TableView fx:id="tv_room" layoutX="425.0" layoutY="151.0" prefHeight="305.0" prefWidth="310.0">
+        <columns>
+          <TableColumn fx:id="tc_ID" prefWidth="83.0" text="房间号" />
+          <TableColumn fx:id="tc_type" prefWidth="120.0" text="房间类型" />
+            <TableColumn fx:id="tc_price" prefWidth="99.0" text="原始价格" />
+        </columns>
+      </TableView>
+      <Label layoutX="94.0" layoutY="289.0" prefHeight="29.0" prefWidth="59.0" text="入住时间">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="333.0" prefHeight="29.0" prefWidth="59.0" text="退房时间">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dp_start" layoutX="175.0" layoutY="289.0" prefHeight="29.0" prefWidth="186.0" />
+      <DatePicker fx:id="dp_end" layoutX="175.0" layoutY="333.0" prefHeight="29.0" prefWidth="186.0" />
+   </children>
+</AnchorPane>

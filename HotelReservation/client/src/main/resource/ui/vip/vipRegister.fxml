@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.vip.vipRegisterViewController">
+   <children>
+      <Pane prefHeight="69.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="69.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Text layoutX="49.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="531.0" prefHeight="69.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="69.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Button fx:id="btn_Cancel" layoutX="705.0" layoutY="20.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="61.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="69.0" prefHeight="462.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="239.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="会员类型">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="239.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="企业名称">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="btn_Register" layoutX="502.0" layoutY="336.0" mnemonicParsing="false" onAction="#btn_RegisterAction" prefHeight="29.0" prefWidth="61.0" text="注册" />
+            <ChoiceBox fx:id="cb_VipType" layoutX="362.0" layoutY="110.0" prefHeight="23.0" prefWidth="161.0" />
+            <TextField fx:id="tf_enterprise" layoutX="362.0" layoutY="220.0" />
+            <Text fill="#2294cd" layoutX="240.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*普通会员请填写生日信息，企业会员请填写企业名称" />
+            <Text layoutX="239.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="生日信息">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="dp_birthday" layoutX="362.0" layoutY="167.0" prefHeight="23.0" prefWidth="161.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>

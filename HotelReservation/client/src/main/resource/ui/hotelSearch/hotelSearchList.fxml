@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.hotelSearch.hotelSearchListViewController">
+   <children>
+      <Pane prefHeight="69.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="69.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Text layoutX="31.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="697.0" layoutY="19.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="61.0" text="首页">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="531.0" prefHeight="69.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="69.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Button fx:id="btn_Cancel" layoutX="693.0" layoutY="20.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="61.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="69.0" prefHeight="464.0" prefWidth="800.0">
+         <children>
+            <TableView fx:id="tv_hotel" layoutX="62.0" layoutY="34.0" prefHeight="335.0" prefWidth="691.0">
+              <columns>
+                  <TableColumn fx:id="tc_ID" prefWidth="115.0" text="ID" />
+                <TableColumn fx:id="tc_name" prefWidth="138.0" text="酒店名称" />
+                <TableColumn fx:id="tc_star" prefWidth="104.0" text="星级" />
+                  <TableColumn fx:id="tc_score" prefWidth="101.0" text="评分" />
+                  <TableColumn fx:id="tc_isReserved" prefWidth="110.0" text="是否预定过" />
+                  <TableColumn fx:id="tc_price" prefWidth="117.0" text="价格" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn_Reserve" layoutX="560.0" layoutY="396.0" mnemonicParsing="false" onAction="#btn_ReserveAction" prefHeight="29.0" prefWidth="61.0" text="预定" />
+            <Button fx:id="btn_Info" layoutX="658.0" layoutY="396.0" mnemonicParsing="false" onAction="#btn_InfoAction" prefHeight="29.0" prefWidth="80.0" text="详细信息" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

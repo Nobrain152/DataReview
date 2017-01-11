@@ -1,0 +1,33 @@
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="62.0" prefWidth="617.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="62.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="617.0" />
+            <Text layoutX="32.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="498.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XXX，欢迎你！">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="393.0" prefHeight="62.0" prefWidth="617.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="62.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="617.0" />
+            <Button layoutX="529.0" layoutY="17.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="61.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="62.0" prefHeight="332.0" prefWidth="617.0" />
+   </children>
+</AnchorPane>

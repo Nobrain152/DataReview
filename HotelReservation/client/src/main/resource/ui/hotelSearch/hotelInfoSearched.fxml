@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.hotelSearch.hotelInfoSearchedViewController">
+   <children>
+      <Pane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Text layoutX="70.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="698.0" layoutY="26.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="59.0" text="首页">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="530.0" prefHeight="70.0" prefWidth="800.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Button fx:id="btn_Cancel" layoutX="700.0" layoutY="20.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="59.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Pane layoutY="80.0" prefHeight="450.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dee6ee" height="30.0" layoutX="100.0" layoutY="106.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="153.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dee6ee" height="30.0" layoutX="100.0" layoutY="149.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="153.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dee6ee" height="63.0" layoutX="40.0" layoutY="223.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="312.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dee6ee" height="93.0" layoutX="41.0" layoutY="328.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="312.0" />
+            <Label fx:id="label_hotelName" layoutX="43.0" layoutY="30.0" prefHeight="32.0" prefWidth="120.0" textFill="#2a75ae">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="73.0" text="星">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_star" layoutX="43.0" layoutY="73.0" prefHeight="19.0" prefWidth="14.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="265.0" layoutY="38.0" text="￥">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_price" layoutX="293.0" layoutY="38.0" prefHeight="19.0" prefWidth="59.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="176.0" layoutY="73.0" text="评分：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_score" layoutX="233.0" layoutY="73.0" prefHeight="19.0" prefWidth="42.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="111.0" text="地址：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_address" layoutX="109.0" layoutY="112.0" prefHeight="19.0" prefWidth="50.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="155.0" text="商圈：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_area" layoutX="109.0" layoutY="155.0" prefHeight="19.0" prefWidth="105.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_facility" layoutX="51.0" layoutY="222.0" prefHeight="63.0" prefWidth="291.0" wrapText="true" />
+            <Label layoutX="41.0" layoutY="193.0" text="服务设施：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="301.0" text="简介：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_introduction" layoutX="50.0" layoutY="328.0" prefHeight="93.0" prefWidth="291.0" wrapText="true" />
+            <TableView fx:id="order" layoutX="393.0" layoutY="87.0" prefHeight="250.0" prefWidth="371.0">
+              <columns>
+                <TableColumn fx:id="order_ID" prefWidth="87.0" text="订单ID" />
+                <TableColumn fx:id="order_time" prefWidth="123.0" text="时间" />
+                  <TableColumn fx:id="order_condition" prefWidth="78.0" text="订单情况" />
+                  <TableColumn fx:id="order_price" prefWidth="77.0" text="价格" />
+              </columns>
+            </TableView>
+            <Label layoutX="393.0" layoutY="47.0" text="在该酒店的订单">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_Reserve" layoutX="553.0" layoutY="359.0" mnemonicParsing="false" onAction="#btn_ReserveAction" prefHeight="32.0" prefWidth="70.0" text="预定">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.customerInfoManage.customerInfoModifyByMViewController">
+   <children>
+      <Pane prefHeight="74.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="74.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Text layoutX="32.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="526.0" prefHeight="74.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="74.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Button fx:id="btn_Cancel" layoutX="689.0" layoutY="23.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="61.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="74.0" prefHeight="453.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="266.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="姓名">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <Text layoutX="252.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="联系方式">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="tf_name" layoutX="357.0" layoutY="146.0" prefHeight="29.0" prefWidth="192.0" />
+            <TextField fx:id="tf_contact" layoutX="357.0" layoutY="212.0" prefHeight="29.0" prefWidth="192.0" />
+            <Button fx:id="btn_Save" layoutX="366.0" layoutY="302.0" mnemonicParsing="false" onAction="#btn_SaveAction" prefHeight="29.0" prefWidth="68.0" text="确认修改" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

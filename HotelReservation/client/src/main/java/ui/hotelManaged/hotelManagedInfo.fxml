@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.hotelManaged.hotelManagedInfoViewController">
+   <children>
+      <Pane prefHeight="70.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Text layoutX="32.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="530.0" prefHeight="70.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="70.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Button fx:id="btn_Cancel" layoutX="714.0" layoutY="21.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="61.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="70.0" prefHeight="460.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="btn_Modify" layoutX="612.0" layoutY="361.0" mnemonicParsing="false" onAction="#btn_ModifyAction" prefHeight="30.0" prefWidth="77.0" text="修改信息" />
+            <Text layoutX="423.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="简介">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="423.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="服务设施">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="83.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="所属商圈">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="83.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="地址">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="83.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="评分">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="83.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="价格">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="83.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="星级">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="83.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店名称">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe7ee" height="29.0" layoutX="173.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe7ee" height="29.0" layoutX="173.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe7ee" height="29.0" layoutX="173.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe7ee" height="29.0" layoutX="173.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe7ee" height="29.0" layoutX="173.0" layoutY="259.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe7ee" height="29.0" layoutX="173.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="193.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe7ee" height="84.0" layoutX="423.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="266.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe7ee" height="123.0" layoutX="423.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="266.0" />
+            <Label fx:id="lb_name" layoutX="180.0" layoutY="49.0" prefHeight="29.0" prefWidth="180.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_star" layoutX="180.0" layoutY="107.0" prefHeight="29.0" prefWidth="180.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_price" layoutX="180.0" layoutY="162.0" prefHeight="29.0" prefWidth="180.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_score" layoutX="180.0" layoutY="209.0" prefHeight="29.0" prefWidth="180.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_address" layoutX="180.0" layoutY="259.0" prefHeight="29.0" prefWidth="180.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_area" layoutX="180.0" layoutY="307.0" prefHeight="29.0" prefWidth="180.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_facility" layoutX="433.0" layoutY="78.0" prefHeight="84.0" prefWidth="246.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_introduction" layoutX="433.0" layoutY="209.0" prefHeight="123.0" prefWidth="246.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

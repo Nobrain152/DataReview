@@ -1,0 +1,68 @@
+package net;
+
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+import config.StaticMessage;
+import util.DataServiceType;
+
+/**
+ * 负责启动客户端的RMI服务
+ * 
+ */
+public class RMIManage {
+
+	private static String pres = StaticMessage.RMIPres;
+	
+	private RMIManage RMIServer;
+
+	private RMIManage(){};
+	
+	private DataServiceType type;
+
+	/**
+	 * 初始化网络
+	 * 
+	 * @return
+	 */
+	public static synchronized boolean netInit() {
+		try {
+			pres = StaticMessage.RMIPres;
+			
+		} catch (Exception e) {
+			
+			return false;
+		}
+		
+		
+		return true;
+	}
+	
+	//TODO 延迟加载 等到登录时再查询
+	
+	/**
+	 * 获取所需数据服务
+	 * @param name
+	 * @return
+	 */
+	public static Remote getDataService(DataServiceType type) {
+		
+				try {
+					return Naming.lookup(pres + type.getName());
+				} catch (Exception e) {
+				} 
+				return null;
+		}
+		
+		
+		
+		
+
+	
+	public static Remote mygetDataService(DataServiceType type) throws MalformedURLException, RemoteException, NotBoundException {
+			return Naming.lookup(pres + type.getName());
+	}
+}

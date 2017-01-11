@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="53.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="617.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="53.0" layoutY="404.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="617.0" />
+      <Text layoutX="505.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="XXX，欢迎你！">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="521.0" layoutY="417.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="66.0" text="返回" />
+      <Button layoutX="56.0" layoutY="295.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" text="酒店信息">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="56.0" layoutY="350.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" text="客房信息">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="165.0" layoutY="295.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" text="订单列表">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="165.0" layoutY="350.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="83.0" text="促销策略">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="31.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d5e2ee" height="183.0" layoutX="56.0" layoutY="76.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="192.0" />
+      <Text layoutX="140.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="头像" />
+      <Text layoutX="334.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="姓名">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="327.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="我的ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="320.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="联系方式">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="327.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="信用度">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dde4eb" height="28.0" layoutX="426.0" layoutY="127.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="144.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dde4eb" height="28.0" layoutX="426.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="144.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dde4eb" height="28.0" layoutX="426.0" layoutY="245.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="144.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dde4eb" height="28.0" layoutX="426.0" layoutY="309.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="144.0" />
+      <Text layoutX="477.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="顾逸飞">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="469.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1234567">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="452.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15150158583">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="485.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

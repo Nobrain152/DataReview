@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.orderOnUser.orderOnUserViewController">
+   <children>
+      <Pane prefHeight="66.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d0d0d0" height="66.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Text layoutX="32.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="酒店预定系统">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="534.0" prefHeight="66.0" prefWidth="800.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4b4b4" height="66.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+            <Button fx:id="btn_Cancel" layoutX="702.0" layoutY="19.0" mnemonicParsing="false" onAction="#btn_CancelAction" prefHeight="28.0" prefWidth="61.0" text="返回">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="66.0" prefHeight="469.0" prefWidth="800.0">
+         <children>
+            <TabPane prefHeight="469.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab id="allOrders" closable="false" text="全部订单">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="326.0" prefWidth="644.0">
+                           <children>
+                              <TableView fx:id="order_all" layoutX="110.0" layoutY="70.0" prefHeight="250.0" prefWidth="570.0">
+                                <columns>
+                                  <TableColumn fx:id="order_all_ID" prefWidth="87.0" text="ID" />
+                                  <TableColumn fx:id="order_all_hotelName" prefWidth="145.0" text="酒店名称" />
+                                    <TableColumn fx:id="order_all_time" prefWidth="246.0" text="时间" />
+                                    <TableColumn fx:id="order_all_price" prefWidth="89.0" text="金额" />
+                                </columns>
+                              </TableView>
+                              <Button fx:id="btn_all_info" layoutX="605.0" layoutY="357.0" mnemonicParsing="false" onAction="#btn_all_infoAction" prefHeight="30.0" prefWidth="75.0" text="详细信息" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab closable="false" text="已执行">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="order_executed" layoutX="110.0" layoutY="70.0" prefHeight="250.0" prefWidth="570.0">
+                                 <columns>
+                                    <TableColumn fx:id="order_executed_ID" prefWidth="96.0" text="ID" />
+                                    <TableColumn fx:id="order_executed_hotelName" prefWidth="141.0" text="酒店名称" />
+                                    <TableColumn fx:id="order_executed_time" prefWidth="225.0" text="时间" />
+                                    <TableColumn fx:id="order_executed_price" prefWidth="103.0" text="金额" />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="btn_executed_info" layoutX="601.0" layoutY="349.0" mnemonicParsing="false" onAction="#btn_executed_infoAction" prefHeight="30.0" prefWidth="79.0" text="详细信息" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab closable="false" text="未执行">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="order_waiting" layoutX="110.0" layoutY="70.0" prefHeight="250.0" prefWidth="570.0">
+                                 <columns>
+                                    <TableColumn fx:id="order_waiting_ID" prefWidth="87.0" text="ID" />
+                                    <TableColumn fx:id="order_waiting_hotelName" prefWidth="142.0" text="酒店名称" />
+                                    <TableColumn fx:id="order_waiting_time" prefWidth="236.0" text="时间" />
+                                    <TableColumn fx:id="order_waiting_price" prefWidth="102.0" text="金额" />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="btn_SetCanceled" layoutX="502.0" layoutY="352.0" mnemonicParsing="false" onAction="#btn_SetCanceledAction" prefHeight="29.0" prefWidth="54.0" text="撤销" />
+                              <Button fx:id="btn_waiting_info" layoutX="610.0" layoutY="352.0" mnemonicParsing="false" onAction="#btn_waiting_infoAction" prefHeight="29.0" prefWidth="70.0" text="详细信息" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab closable="false" text="已撤销">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="order_canceled" layoutX="110.0" layoutY="70.0" prefHeight="250.0" prefWidth="570.0">
+                                 <columns>
+                                    <TableColumn fx:id="order_canceled_ID" prefWidth="102.0" text="ID" />
+                                    <TableColumn fx:id="order_canceled_hotelName" prefWidth="126.0" text="酒店名称" />
+                                    <TableColumn fx:id="order_canceled_time" prefWidth="229.0" text="时间" />
+                                    <TableColumn fx:id="order_canceled_price" prefWidth="108.0" text="金额" />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="btn_canceled_info" layoutX="608.0" layoutY="348.0" mnemonicParsing="false" onAction="#btn_canceled_infoAction" prefHeight="30.0" prefWidth="72.0" text="详细信息" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab closable="false" text="异常">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="order_abnormal" layoutX="110.0" layoutY="70.0" prefHeight="250.0" prefWidth="570.0">
+                                 <columns>
+                                    <TableColumn fx:id="order_abnormal_ID" prefWidth="105.0" text="ID" />
+                                    <TableColumn fx:id="order_abnormal_hotelName" prefWidth="137.0" text="酒店名称" />
+                                    <TableColumn fx:id="order_abnormal_time" prefWidth="227.0" text="时间" />
+                                    <TableColumn fx:id="order_abnormal_price" prefWidth="95.0" text="金额" />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="btn_abnormal_info" layoutX="606.0" layoutY="352.0" mnemonicParsing="false" onAction="#btn_abnormal_infoAction" prefHeight="30.0" prefWidth="74.0" text="详细信息" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children></Pane>
+   </children>
+</AnchorPane>
